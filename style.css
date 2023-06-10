@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: flex-end;
 
-  width: 50%;
+  width: 60%;
   height: 500px;
 
   border-radius: 10px;
@@ -48,7 +48,6 @@ body {
   background-image: url(images/toupeira6.svg);
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
 .mole_img#anim-1 {
@@ -71,22 +70,65 @@ body {
 
 @keyframes move_mole {
   0% {
-      background-image: url(./images/toupeira1.svg);
+    background-image: url(./images/toupeira1.svg);
   }
+
   20% {
-      background-image: url(./images/toupeira2.svg);
+    background-image: url(./images/toupeira2.svg);
   }
+
   40% {
-      background-image: url(./images/toupeira3.svg);
+    background-image: url(./images/toupeira3.svg);
   }
+
   60% {
-      background-image: url(./images/toupeira4.svg);
+    background-image: url(./images/toupeira4.svg);
   }
+
   80% {
-      background-image: url(./images/toupeira5.svg);
+    background-image: url(./images/toupeira5.svg);
   }
+
   100% {
-      background-image: url(./images/toupeira6.svg);
+    background-image: url(./images/toupeira6.svg);
   }
-  
+
+}
+
+@media (max-width: 600px) {
+  .app {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    width: 70%;
+    height: 600px;
+
+    border-radius: 10px;
+    background: url(images/fundo.svg);
+    background-repeat: no-repeat;
+  }
+
+  .wrapper_mole {
+    display: grid;
+    grid-template-areas:
+      'A B '
+      'C D'
+      'E F';
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: fit-content;
+  }
+
+  .mole_img {
+    width: 110px;
+    height: 110px;
+
+    background-image: url(images/toupeira6.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
 }
